@@ -9,14 +9,15 @@ import Team from "./Team";
 import Events from "./Events";
 import Contact from "./Contact";
 import Particles from "./Particles";
+import UpComingEvents from "./UpComingEvents";
+import CCPDCollab from "./CCPDCollab";
 
 const Home = () => {
   return (
     <>
       <div className="home_page">
-      <div className="absolute top-0 left-0 w-full h-full z-[-1]">
-      
-          <Particles/>
+        <div className="absolute top-0 left-0 w-full h-full z-[-1]">
+          <Particles />
         </div>
         <div className="left_content">
           <h1 className="text-4xl font-bold space-y-2 ">
@@ -30,14 +31,32 @@ const Home = () => {
               }}
             />{" "}
           </h1>
-          <p className="text-sm text-gray-600 mt-5 w-[80%]"> Within the GFG Student Chapter at CGC-J, our core ethos revolves around the spirit of communal collaboration. Here, developers, designers, machine learning aficionados, and skilled technical content creators converge in a shared space, harmoniously cultivating knowledge and development through their engagement with the broader community.</p>
-            <div className="buttons mt-8 gap-5 flex justify-start">
-              <a className="w-[150px] text-center bg-white border-[#2f8d46] border-solid  text-m text-[#2f8d46] border rounded-3xl py-2 px-7 hover:bg-[#2f8d37] hover:text-white " href="#team">Meet Our team</a>
-              <a className="w-[150px] text-center bg-[#2f8d46] border-solid border border-transparent text-m text-white border-solid rounded-3xl py-2 px-7 hover:bg-transparent hover:text-[#2f8d46]  hover:border-[#2f8d37]" href="#event">Events</a>
-            </div>
+          <p className="text-sm text-gray-600 mt-5 w-[80%]">
+            {" "}
+            Within the GFG Student Chapter at CGC-J, our core ethos revolves
+            around the spirit of communal collaboration. Here, developers,
+            designers, machine learning aficionados, and skilled technical
+            content creators converge in a shared space, harmoniously
+            cultivating knowledge and development through their engagement with
+            the broader community.
+          </p>
+          <div className="buttons mt-8 gap-5 flex justify-start">
+            <a
+              className="w-[150px] text-center bg-white border-[#2f8d46] border-solid  text-m text-[#2f8d46] border rounded-3xl py-2 px-7 hover:bg-[#2f8d37] hover:text-white "
+              href="#team"
+            >
+              Meet Our team
+            </a>
+            <a
+              className="w-[150px] text-center bg-[#2f8d46] border-solid border border-transparent text-m text-white border-solid rounded-3xl py-2 px-7 hover:bg-transparent hover:text-[#2f8d46]  hover:border-[#2f8d37]"
+              href="#event"
+            >
+              Events
+            </a>
+          </div>
         </div>
         <div className="home_logo">
-          <img  src={logo} alt="image" />
+          <img src={logo} alt="image" />
           <div className="floating_box shadow-xl">
             <img src={code} alt="code" />{" "}
             <h4> Bring innovation in your code.</h4>
@@ -48,11 +67,14 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <About/>
-      <Career/>
-      <Team/>
-      <Events/>
-      <Contact/>
+      <About />
+      {/* <CCPDCollab/> */}
+      <Career />
+      <UpComingEvents />
+
+      <Team />
+      <Events />
+      <Contact />
     </>
   );
 };

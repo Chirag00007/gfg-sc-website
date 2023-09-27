@@ -10,7 +10,7 @@ import Events from "./Events";
 import Contact from "./Contact";
 import Particles from "./Particles";
 import UpComingEvents from "./UpComingEvents";
-import CCPDCollab from "./CCPDCollab";
+// import CCPDCollab from "./CCPDCollab";
 
 const Home = () => {
   return (
@@ -51,7 +51,7 @@ const Home = () => {
               className="w-[150px] text-center bg-[#2f8d46] border-solid border border-transparent text-m text-white border-solid rounded-3xl py-2 px-7 hover:bg-transparent hover:text-[#2f8d46]  hover:border-[#2f8d37]"
               href="#event"
             >
-              Events
+              Events & Activities
             </a>
           </div>
         </div>
@@ -68,10 +68,8 @@ const Home = () => {
         </div>
       </div>
       <About />
-      {/* <CCPDCollab/> */}
       <Career />
       <UpComingEvents />
-
       <Team />
       <Events />
       <Contact />

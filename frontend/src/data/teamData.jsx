@@ -5,6 +5,7 @@ import ayush from "../images/ayush.JPG";
 import ankita from "../images/ankita.jpg";
 import shuchi from "../images/shuchi.jpg";
 import khushi from "../images/khushi.JPG";
+import yashveer from "../images/yashveer.jpg";
 
 const teamData = [
   {
@@ -63,6 +64,14 @@ const teamData = [
     instagram: "#",
     facebook: "#",
   },
+  {
+    name: "Yashveer Singh",
+    img: yashveer,
+    role: "(Marketing Head)",
+    linkedin: "#",
+    instagram: "#",
+    facebook: "#",
+  }
 ];
 
 export default teamData;

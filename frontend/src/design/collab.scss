@@ -1,0 +1,85 @@
+.collab_page {
+ width: 100%;
+ overflow: hidden;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ padding-top: 40px;
+ padding-bottom: 40px;
+ background-color: rgba(253, 250, 250, 0.837);
+}
+
+
+.collab_card {
+ width: 100%;
+ margin: 10px auto;
+ margin-top: 30px;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ overflow: hidden;
+
+ h1 {
+  font-size: 25px;
+  margin: 15px auto;
+  font-weight: bold;
+  color: #2f8d46;
+ }
+
+ .img_collab {
+  flex-basis: 40%;
+  overflow: hidden;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+
+  img {
+   width: 100%;
+  }
+ }
+
+ .collab_card_content {
+  flex-basis: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 20px;
+
+  p {
+   font-size: 12px;
+  }
+
+  a {
+   margin: 15px auto;
+  }
+ }
+
+
+}
+
+@media (max-width : 700px) {
+ .collab_card {
+  flex-direction: column;
+  width: 90%;
+  margin: 10px auto;
+
+  p {
+   font-size: 10px;
+   text-align: center;
+  }
+
+  a {
+   font-size: 12px;
+  }
+ }
+
+ .collab_about {
+  width: 300px;
+  margin-top: 10px;
+ }
+}

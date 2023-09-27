@@ -59,8 +59,9 @@
 }
 
 @media (max-width : 700px) {
+  
     .about_card {
-        flex-direction: column-reverse;
+        flex-direction: column;
         width: 90%;
         margin: 10px auto;
         p {
@@ -71,6 +72,9 @@
             font-size: 12px;
         }
     }
+          .about1_card {
+              flex-direction: column-reverse;
+          }
     .img_about {
         width: 300px;
         margin-top: 10px;

@@ -1,0 +1,1 @@
+export const MONGO_ATLAS_URL = "mongodb+srv://chiragvohra39470:JQwIK8cPLxLen6WW@mycluster.i9pxneu.mongodb.net/"

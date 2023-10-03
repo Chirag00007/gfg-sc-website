@@ -3,12 +3,13 @@ const app = require('./app')
 const express = require("express");
 const { connectToMongoDb } = require("./db");
 const bodyParser = require("body-parser");
-const mongoURI =
-  "mongodb+srv://chiragvohra39470:JQwIK8cPLxLen6WW@mycluster.i9pxneu.mongodb.net/";
+require("dotenv").config();
+const mongoURI = process.env.MONGO_ATLAS_URL;
+
+console.log(mongoURI);
 
 
-
-const port = 5000;
+const port = process.env.PORT;
 app.use(bodyParser.json());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

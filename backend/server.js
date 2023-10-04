@@ -23,7 +23,7 @@ connectToMongoDb(mongoURI).then(() =>
 );
 
 app.use("/",(req,res) => {
-    res.send("Welcome to the backend")
+  res.json({ message: "Hello World" });
 })
 
 app.listen(port , () => {

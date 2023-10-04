@@ -4,11 +4,16 @@ const express = require("express");
 const { connectToMongoDb } = require("./db");
 const bodyParser = require("body-parser");
 require("dotenv").config();
+const cors = require("cors");
 const mongoURI = process.env.MONGO_ATLAS_URL;
 
 console.log(mongoURI);
 
-
+app.use(cors({
+  origin: ['https://backend-gfg.vercel.app/'],
+  methods: ['GET', 'POST'],
+  credentials: true
+}));
 const port = process.env.PORT;
 app.use(bodyParser.json());
 app.use(express.json());

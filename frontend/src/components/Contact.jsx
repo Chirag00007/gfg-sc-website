@@ -27,7 +27,11 @@ const Contact = () => {
 
       setLoading(true);
       const config = { headers: { "Content-Type": "application/json" } };
-      const { data } = await axios.post("/api/contact", myForm, config);
+      const { data } = await axios.post(
+        "https://cgcj-gfg-sc.vercel.app/api/contact",
+        myForm,
+        config
+      );
       //Setting success true
 
       setSuccess(true);

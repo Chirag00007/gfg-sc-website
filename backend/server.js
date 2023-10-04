@@ -9,11 +9,13 @@ const mongoURI = process.env.MONGO_ATLAS_URL;
 
 console.log(mongoURI);
 
-app.use(cors({
-  origin: ['https://backend-gfg.vercel.app/'],
-  methods: ['GET', 'POST'],
-  credentials: true
-}));
+app.use(
+  cors({
+    origin: ["https://cgcj-gfg-sc.vercel.app/"],
+    methods: ["GET", "POST"],
+    credentials: true,
+  })
+);
 const port = process.env.PORT;
 app.use(bodyParser.json());
 app.use(express.json());
